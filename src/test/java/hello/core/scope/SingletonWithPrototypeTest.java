@@ -38,7 +38,7 @@ public class SingletonWithPrototypeTest {
 
     @Scope("singleton")
     static class ClientBean {
-        private final PrototypeBean prototypeBean;
+        private final PrototypeBean prototypeBean; //생성시점에 주입
 
         @Autowired
         public ClientBean(PrototypeBean prototypeBean) {
