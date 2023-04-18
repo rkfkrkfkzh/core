@@ -25,12 +25,10 @@ public class MyLogger {
     public void init() {
         uuid = UUID.randomUUID().toString();
         System.out.println("[" + uuid + "] reauest scope been create:" + this);
-
     }
 
     @PreDestroy
     public void close() {
         System.out.println("[" + uuid + "] reauest scope been close:" + this);
-
     }
 }
